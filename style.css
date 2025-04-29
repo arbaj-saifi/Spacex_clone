@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* z-index:-1; */
+    justify-content: space-between;
+    background-color: #000000be;
+    
+}
+.left{
+    width: 20%;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left img{
+    width: 300px;
+    height:100px;
+}
+.middle{
+    width: 60%;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.middle a{
+    font-size: 1rem;
+    color: #ffffff;
+}
+.shop{
+    width: 20%;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.shop h1{
+    font-size: 1rem;
+    color: #ffffff;
+}
+.shop h2{
+    font-size: 1rem;
+    color: #ffffff;
+}
+.first-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Launch_Page_Starlink1_vertical_18_DESKTOP_3d33146ef8.jpg");
+    background-position:center;
+    /* background-size: cover; */
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    position: relative;
+}
+.content{
+    color: #ffffff;
+    position: absolute;
+    top: 60vh;
+    left: 8vw;
+    
+}
+.content h3{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
+.content h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+}
+button{
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #ffffff;
+    color: black;
+    border-color: #ffffff;
+    transform: scale(1);
+}
+.second-container{
+     width: 100%;
+    height: 100vh;
+    background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Star12_23_042725_streak_desktop_62f4bcefef.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+   
+}
+.content-1{
+    color: #ffffff;
+    position: absolute;
+    top: 60vh;
+    left: 8vw;
+    
+}
+.content-1 h3{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
+.content-1 h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+}
+button{
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+}
+.third-container{
+    width: 100%;
+
+    height:100vh;
+    background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg');
+   background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+   
+}
+.content-2{
+    color: #ffffff;
+    position: absolute;
+    top: 60vh;
+    left: 8vw;
+    
+}
+.content-2 h3{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
+.content-2 h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+}
+.fourth-container{
+     width: 100%;
+    height: 100vh;
+    background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/make_life_multiplanetary_desktop_3fa7cff73c.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+   
+}
+.content-3{
+    color: #ffffff;
+    position: absolute;
+    top: 60vh;
+    left: 8vw;
+    
+}
+.content-3 h3{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
+.content-3 h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+}
+footer{
+    width: 100vw;
+    height: 100px;
+    background-color: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footer-links{
+    gap: 30px;
+    display: flex;
+    color: white;
+
+}
+.footer-links a{
+    text-decoration: none;
+    color: white;
+}
+.hamburger{
+    display: none;
+}
+@media (max-width: 768px) {
+    .middle, .shop{
+        display: none;
+    }
+     .left{
+    width: fit-content;
+   }
+
+   .logo{
+    height: 40px;
+    width: auto;
+   }
+   .left{
+    margin: 0 auto;
+   }
+   
+   nav{
+    width: 100%;
+    padding: 7px;
+    margin: 0;
+
+    height: 50px;
+
+   }
+
+   .hamburger{
+    display: block;
+    width: 20px;
+    /* fill: black; */
+    height: 20px;
+    padding: 0;
+    position: relative;
+    justify-self: flex-end;
+}
+
+    .content h4{
+        font-size: 2rem;
+    }
+
+    .content h1{
+        font-size: 2rem;
+    }
+
+    .content button{
+        height: 70;
+        width: 150px;
+        border: 1px solid white;
+        font-size: 1rem;
+    }
+     .content-1 h4{
+        font-size: 2rem;
+    }
+
+    .content-1 h1{
+        font-size: 2rem;
+    }
+
+    .content-1 button{
+        height: 70;
+        width: 150px;
+        border: 1px solid white;
+        font-size: 1rem;
+    }
+     .content-2 h4{
+        font-size: 2rem;
+    }
+
+    .content-2 h1{
+        font-size: 2rem;
+    }
+
+    .content-2 button{
+        height: 70;
+        width: 150px;
+        border: 1px solid white;
+        font-size: 1rem;
+    }
+     .content-3 h4{
+        font-size: 2rem;
+    }
+
+    .content-3 h1{
+        font-size: 2rem;
+    }
+
+    .content-3 button{
+        height: 70;
+        width: 150px;
+        border: 1px solid white;
+        font-size: 1rem;
+    }
+}    
