@@ -3,35 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 a{
     text-decoration: none;
 }
 nav{
     width: 100%;
-    height: 100%;
+    /* max-width: 1380px; */
+    height: 90px;
     margin: 0 auto;
     display: flex;
     /* text-align: center; */
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 10;
+    left: 0;
+    z-index: 1000;
+    padding: 20px 30px;
+    background: linear-gradient(to bottom, #000000, #ffffff);
     /* z-index:-1; */
     justify-content: space-between;
-    background-color: #000000be;
+    background-color: #000000;
     
 }
+.nav-manu{
+    width: 100%;
+    max-width: 1380px;
+    height: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
 .left{
-    width: 20%;
-    height: 90px;
+    width: 15%;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 .left img{
-    width: 300px;
-    height:100px;
+    width: 200px;
+    height:70px;
+    /* object-fit: cover; */
 }
 .middle{
     width: 60%;
@@ -42,8 +59,11 @@ nav{
     justify-content: space-around;
 }
 .middle a{
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #ffffff;
+    text-transform: uppercase;
+    gap: 20px;
+    letter-spacing: 0;
 }
 .shop{
     width: 20%;
@@ -57,26 +77,51 @@ nav{
     font-size: 1rem;
     color: #ffffff;
 }
-.shop h2{
-    font-size: 1rem;
-    color: #ffffff;
+.shop svg{
+    width: 70px;
+    height: 20px;
+    fill: white;
+    cursor: pointer;
 }
 .first-container{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Launch_Page_Starlink1_vertical_18_DESKTOP_3d33146ef8.jpg");
     background-position:center;
-    /* background-size: cover; */
+   
     background-size: cover;
-    /* background-attachment: fixed; */
+  
     background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+}
+.section{
+    display: block;
+    height: 130vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     position: relative;
+}
+.inner-content{
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 .content{
     color: #ffffff;
     position: absolute;
     top: 60vh;
-    left: 8vw;
+    width: 50%;
+    max-width: 520px;
+    
+    text-align: left;
+    /* display: block; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* left: 7vw; */
     
 }
 .content h3{
@@ -94,6 +139,7 @@ button{
     height: 50px;
     background-color: transparent;
     color: white;
+    border: 1px solid white;
     border-radius: 10px;
 }
 button:hover{
@@ -104,19 +150,23 @@ button:hover{
 }
 .second-container{
      width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Star12_23_042725_streak_desktop_62f4bcefef.jpg');
     background-position: center;
     background-size: cover;
-    position: relative;
     background-repeat: no-repeat;
+    position: absolute;
+    display: block;
    
 }
 .content-1{
     color: #ffffff;
     position: absolute;
     top: 60vh;
-    left: 8vw;
+    width: 50%;
+    max-width: 520px;
+    
+    text-align: left;
     
 }
 .content-1 h3{
@@ -138,21 +188,23 @@ button{
 }
 .third-container{
     width: 100%;
-
-    height:100vh;
+    height:100%;
     background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg');
    background-position: center;
     background-size: cover;
-    position: relative;
     background-repeat: no-repeat;
+    position: absolute;
+    display: block;
    
 }
 .content-2{
     color: #ffffff;
     position: absolute;
     top: 60vh;
-    left: 8vw;
+    width: 50%;
+    max-width: 520px;
     
+    text-align: left;
 }
 .content-2 h3{
     color: white;
@@ -166,19 +218,23 @@ button{
 }
 .fourth-container{
      width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/make_life_multiplanetary_desktop_3fa7cff73c.jpg');
     background-position: center;
     background-size: cover;
-    position: relative;
     background-repeat: no-repeat;
+    position: absolute;
+    display: block;
    
 }
 .content-3{
     color: #ffffff;
     position: absolute;
     top: 60vh;
-    left: 8vw;
+    width: 50%;
+    max-width: 520px;
+    
+    text-align: left;
     
 }
 .content-3 h3{
@@ -192,23 +248,57 @@ button{
     font-weight: 500;
 }
 footer{
-    width: 100vw;
-    height: 100px;
+    width: 100%;
+    height: 110px;
     background-color: #0a0a0a;
-    display: flex;
+    display: grid;
+    margin: 0 auto;
+    padding: 10px;
+    /* grid-template-columns: 1fr; */
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 .footer-links{
-    gap: 30px;
+    width: 100%;
+    max-width: 1250px;
+    gap: 35px;
+    /* padding: 10px; */
+    margin: 0 auto;
     display: flex;
     color: white;
 
 }
 .footer-links a{
     text-decoration: none;
-    color: white;
+    color: #eeeeee;
+    font-size: 1rem;
+}
+.arbaj{
+    width: 100%;
+    max-width: 1250px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+   /* gap: 40px; */
+
+}
+.arbaj h1{
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    
+}
+.arbaj strong{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff0000;
+}
+.arbaj a{
+    list-style: none;   
+    text-decoration: none;
 }
 .hamburger{
     display: none;
@@ -237,7 +327,9 @@ footer{
     height: 50px;
 
    }
-
+   .inner-content{
+    left: 50px;
+   }
    .hamburger{
     display: block;
     width: 20px;
@@ -303,5 +395,15 @@ footer{
         width: 150px;
         border: 1px solid white;
         font-size: 1rem;
+    }
+    .footer-links a{
+        font-size: 0.70rem;
+        padding: 10px;
+    }
+    .arbaj h1{
+        font-size: 0.70rem;
+    }
+    .arbaj strong{
+        font-size: 0.95rem;
     }
 }    
